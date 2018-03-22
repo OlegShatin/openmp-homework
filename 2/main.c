@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	int  myid;
 	omp_set_dynamic(0);		// запретить библиотеке openmp менять число потоков во время исполнения
 
-	omp_set_num_threads(6); // установить число потоков в 2
+	omp_set_num_threads(3); // установить число потоков в 2
 	int threadsCount = omp_get_max_threads();
 	printf("%d\n",threadsCount);
     #pragma omp parallel if(threadsCount > 1) private(myid, threadsCount)
