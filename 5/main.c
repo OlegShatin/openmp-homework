@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	for (int i = 0; i < 6; i++)
 	{
 
-		for (int j = 0; j < 10; j++)
+		for (int j = 0; j < 8; j++)
 		{
 			d[i][j] = rand();
 		}
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 			int sum = 0;
 			for (int i = 0; i < 6; i++)
 			{
-				for (int j = 0; j < 10; j++)
+				for (int j = 0; j < 8; j++)
 				{
 					sum += d[i][j];
 				}
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 			int max = d[0][0];
 			for (int i = 0; i < 6; i++)
 			{
-				for (int j = 0; j < 10; j++)
+				for (int j = 0; j < 8; j++)
 				{
 					if (min > d[i][j])
 						min = d[i][j];
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 			int dividedOn3Count = 0;
 			for (int i = 0; i < 6; i++)
 			{
-				for (int j = 0; j < 10; j++)
+				for (int j = 0; j < 8; j++)
 				{
 					if (d[i][j] % 3 == 0)
 						dividedOn3Count++;
